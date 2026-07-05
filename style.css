@@ -77,9 +77,10 @@ body:hover .structural-grid { opacity: 1; }
 /* 1. Background Image */
 .hero-bg {
   position: absolute; inset: -5%; width: 110%; height: 110%; /* give room for parallax */
-  background-image: url('BG Image.png');
+  background-image: url('BG Image.webp');
   background-size: 115%;
   background-position: calc(85% + var(--bg-x, 0px)) calc(15% + var(--bg-y, 0px));
+  background-repeat: no-repeat;
   filter: saturate(0.85) contrast(1.05) brightness(0.95); /* Color Grade */
   z-index: 0;
   transform-origin: center center;
@@ -1245,6 +1246,11 @@ html.lenis { height: auto; }
    ========================================= */
 @media (max-width: 768px) {
   /* Hero Section */
+  .hero-bg {
+    background-image: url('mobile-hero.webp');
+    background-size: cover;
+    background-position: center;
+  }
   .hero-content { padding: 5rem 5vw 2rem 5vw; }
   .ch-gallery { height: auto; min-height: 100vh; overflow-y: visible; }
   .hero-left-col { width: 100%; padding-left: 0; }
