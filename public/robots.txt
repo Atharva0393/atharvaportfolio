@@ -1,0 +1,6 @@
+# Atharva Kale — AI Systems Engineer & Full-Stack Developer
+User-agent: *
+Allow: /
+
+Sitemap: https://atharvakale.dev/sitemap.xml
+
